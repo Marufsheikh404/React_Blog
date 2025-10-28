@@ -6,7 +6,7 @@
         "category_id": 1,
         "author": "Sakib Hasan",
         "date": "2025-10-25",
-        "image": " https://i.ibb.co.com/tTxmftJD/7454574545-440x440.webp",
+        "image": "https://i.ibb.co.com/tTxmftJD/7454574545-440x440.webp",
         "short_description": "Learn step-by-step how to create a professional website using React, including routing and responsive design.",
         "long_description": "React is one of the most powerful libraries for building modern web applications. In this guide, we’ll create a full-featured website using React, Tailwind CSS, and React Router. You’ll learn how to set up routing, manage state, and make your design fully responsive for all devices. Additionally, we’ll cover how to deploy your site online using Vercel or Netlify. This tutorial is beginner-friendly but still covers advanced tips for better performance and SEO.",
         "tags": [
@@ -142,7 +142,7 @@
         "category_id": 1,
         "author": "Sakib Hasan",
         "date": "2025-10-09",
-        "image": "/images/image-optimize.jpg",
+        "image": " https://i.ibb.co.com/tTxmftJD/7454574545-440x440.webp",
         "short_description": "Learn simple tricks to optimize images for web performance without losing quality.",
         "long_description": "Page speed is crucial for user experience and SEO. Large images slow down your site, so optimizing them is key. In this guide, we’ll cover compression tools like TinyPNG, choosing the right format (WebP vs JPG), and implementing lazy loading in React. You’ll see how small image improvements can significantly increase website performance.",
         "tags": [
@@ -161,7 +161,7 @@
         "category_id": 2,
         "author": "Sakib Hasan",
         "date": "2025-10-08",
-        "image": "/images/ui-ux.jpg",
+        "image": " https://i.ibb.co.com/tTxmftJD/7454574545-440x440.webp",
         "short_description": "Understand the difference between UI and UX design and why both are important.",
         "long_description": "Many beginners confuse UI and UX design, but they are not the same. UI (User Interface) focuses on visuals and layout, while UX (User Experience) is about usability and user flow. In this blog, we’ll explain the main differences, why both are necessary, and how they work together to create a great product experience.",
         "tags": [
@@ -180,7 +180,7 @@
         "category_id": 5,
         "author": "Sakib Hasan",
         "date": "2025-10-05",
-        "image": "/images/dev-mistakes.jpg",
+        "image": " https://i.ibb.co.com/tTxmftJD/7454574545-440x440.webp",
         "short_description": "Avoid these common beginner mistakes to grow faster as a web developer.",
         "long_description": "When starting your coding journey, it's easy to make mistakes that slow down your progress. Some of the most common errors include ignoring documentation, not practicing enough, and copying code without understanding. In this post, we’ll talk about how to overcome these habits and become a more confident developer.",
         "tags": [
@@ -256,7 +256,7 @@
         "category_id": 1,
         "author": "Sakib Hasan",
         "date": "2025-09-20",
-        "image": "/images/react-ecommerce.jpg",
+        "image": " https://i.ibb.co.com/tTxmftJD/7454574545-440x440.webp",
         "short_description": "Step-by-step guide to building an e-commerce website using React and Firebase.",
         "long_description": "Creating an e-commerce website is a great project to learn React. In this tutorial, we’ll use React, Context API, and Firebase to handle authentication and data storage. You’ll also learn to create a cart system, product pages, and payment integration. By the end, you’ll have a fully functional online store.",
         "tags": [
