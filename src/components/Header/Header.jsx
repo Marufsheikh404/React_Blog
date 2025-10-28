@@ -11,8 +11,8 @@ const Header = () => {
         </div>
     )
     return (
-        <div className='container px-10 mx-auto'>
-            <div className="navbar bg-base-100 shadow-sm">
+        <div className='bg-slate-100 shadow-xl'>
+            <div className="navbar  shadow-sm flex justify-around container px-7">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
