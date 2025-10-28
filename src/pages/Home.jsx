@@ -4,32 +4,52 @@ import Category from './Category';
 import CategoryBlog from './CategoryBlog';
 
 const Home = () => {
-    const [blogs, setBlogs]= useState([]);
+    const [blogs, setBlogs] = useState([]);
     const [categories, setCategories] = useState([]);
-    // Blogs data
-    useEffect(()=>{
-        fetch('blogs.json')
-        .then(res => res.json())
-        .then(data => setBlogs(data))
-    },[])
+    const [categoryBlogId, setcategoryBlogId] = useState();
 
-    // Category Data
-    useEffect(()=>{
-        fetch('category.json')
-        .then(res => res.json())
-        .then(data => setCategories(data)
-        )
-    },[])
+    //  Fetch Blogs data
+    useEffect(() => {
+        fetch('/blogs.json')
+            .then(res => res.json())
+            .then(data => setBlogs(data))
+            .catch(err => console.error('Error loading blogs:', err));
+    }, []);
+
+    //  Fetch Category Data
+    useEffect(() => {
+        fetch('/category.json')
+            .then(res => res.json())
+            .then(data => setCategories(data))
+            .catch(err => console.error('Error loading categories:', err));
+    }, []);
+
+    // Onclick Handler
+    const handleClick =(id)=>{
+        setcategoryBlogId(id)
+    }
     return (
-        <div>
-            <div className='container px-7 mx-auto grid grid-cols-12 gap-4 mt-4'>
-                <div className='col-span-8 border border-gray-400 p-3'>
-                    <Blogs></Blogs>
+        <div className="bg-gray-50 min-h-screen py-6">
+            <div className="container mx-auto px-2 lg:px-10 grid grid-cols-1 lg:grid-cols-12 gap-4">
+
+                {/* Left side (Blogs Section) */}
+                <div className="lg:col-span-7 bg-white border border-gray-200 rounded-xl shadow-md p-5">
+                    <h2 className="text-2xl font-semibold mb-4 text-gray-700 border-b pb-2">Latest Blogs</h2>
+                    <Blogs blogs={blogs} />
                 </div>
-                <div className='col-span-4border border-gray-400 p-3'>
-                    <Category></Category>
-                    <CategoryBlog></CategoryBlog>
+
+                {/*  Right side (Category + Category Blogs) */}
+                <div className="lg:col-span-5 bg-white border border-gray-200 rounded-xl shadow-md p-5 space-y-6">
+                    <div>
+                        <h3 className="text-xl font-semibold mb-3 text-gray-700 border-b pb-2">Categories</h3>
+                            <Category  categories={categories}  handleClick ={handleClick}/>
+                    </div>
+
+                    <div>
+                        <CategoryBlog blogs ={blogs} categoryBlogId ={categoryBlogId}/>
+                    </div>
                 </div>
+
             </div>
         </div>
     );
